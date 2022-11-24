@@ -1,0 +1,6 @@
+venv
+dist
+build
+*.spec
+log.txt
+vipienul.txt
