@@ -7,9 +7,11 @@ import win32con
 import os.path
 import sys
 import getpass
+import pathlib
 
+CURRENT_FILE_PATH = pathlib.Path(__file__).parent.absolute()
 VPN_APP_PATH = r"C:\Program Files (x86)\Cisco\Cisco AnyConnect Secure Mobility Client\vpnui.exe"
-CONFIG_FILE = 'vipienul.txt'
+CONFIG_FILE = os.path.join(CURRENT_FILE_PATH, '../vipienul.txt')
 LOGIN_FORM_NAME = 'Cisco AnyConnect Login'
 EMAIL = ''
 PASSWORD = ''
@@ -81,4 +83,5 @@ def main():
         # logger.info('Current focused  window is not Cisco AnyConnect Login')
 
 if __name__ == '__main__':
+    print('Start script')
     main()

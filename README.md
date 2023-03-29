@@ -14,6 +14,8 @@
 
 automate the connect to Cisco Any Connect VPN
 
+## Use
+click ```main.bat``` file
 
 ## 🛠️ Features
 
