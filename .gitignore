@@ -1,6 +1,9 @@
+__pycache__/
 venv
 dist
 build
 *.spec
 log.txt
 vipienul.txt
+/logs/*
+!/logs/.gitkeep
